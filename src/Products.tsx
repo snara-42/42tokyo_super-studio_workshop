@@ -1,10 +1,12 @@
 import products from '../products.json';
 import './Products.css';
 import ProductsDetail from './ProductsDetail';
+import PhotoSlider from "./components/PhotoSlider";
 
 function Products() {
   return (
     <>
+      <PhotoSlider />
       <h1>商品一覧</h1>
       <div className="product-list">
         {products.map((product) => (
@@ -13,6 +15,11 @@ function Products() {
               <img src={product.image_urls[0]} alt={product.name} className="product-image"/>
             </a>
             <a href="#mayo">
+            <img
+              src={product.image_urls[0]}
+               alt={product.name}
+               className="product-image"
+             />
               <h2 className="product-name">{product.name}</h2>
             </a>
             <p className="product-price">¥{product.price}</p>

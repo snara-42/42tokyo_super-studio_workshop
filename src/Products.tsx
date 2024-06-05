@@ -1,5 +1,6 @@
 import products from '../products.json';
 import './Products.css';
+import ProductsDetail from './ProductsDetail';
 
 function Products() {
   return (
@@ -8,21 +9,22 @@ function Products() {
       <div className="product-list">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={product.image_urls[0]} alt={product.name} className="product-image" />
-            <div className="product-info">
+            <a href="#mayo">
+              <img src={product.image_urls[0]} alt={product.name} className="product-image"/>
+            </a>
+            <a href="#mayo">
               <h2 className="product-name">{product.name}</h2>
-              <p className="product-price">¥{product.price}</p>
-              <p className="product-title">{product.title}</p>
-              <p>
-                <button className="button-cart">
-                  カートに入れる
-                </button>
-              </p>
-            </div>
+            </a>
+            <p className="product-price">¥{product.price}</p>
+            <p className="product-title">{product.title}</p>
+            <p>
+              <button className="button-cart">
+                カートに入れる
+              </button>
+            </p>
           </div>
         ))}
       </div>
-
       <h1>レシピ一覧</h1>
       <div className="product-list">
         {products.map((product) => (
@@ -34,6 +36,7 @@ function Products() {
           </div>
         ))}
       </div>
+      <ProductsDetail/>
     </>
   );
 }

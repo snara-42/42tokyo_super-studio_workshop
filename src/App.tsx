@@ -17,7 +17,8 @@ function App() {
           width: '100%',
           top: 0,
           left: 0,
-          background: '#fff'
+          background: '#fff',
+          zIndex: 10
         }}>
 
           <Link to="/">ホーム</Link> |{" "}

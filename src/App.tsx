@@ -10,7 +10,8 @@ function App() {
     <Router>
       <div>
         <nav style={{ 'borderBottom': '1px solid', 'marginBottom': '20px', padding: '20px 0', position: 'fixed', width: '100%', top: 0, left: 0, background: '#fff' }}>
-          <Link style={{padding: '20px 0',}} to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link>
+          <Link style={{padding: '20px 0'}} to="/">ホーム</Link> | <Link to="/privacy">プライバシーポリシー</Link>
+          <Link to="/" style={{position: 'absolute', right: '20px', top: '20px'}}>カート</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Products />} />

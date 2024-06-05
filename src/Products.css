@@ -122,3 +122,15 @@
   margin-bottom: 1em;
   list-style: none;
 }
+
+.button-cart {
+  background-color: #F5C076;
+  /* background-color: #76F59A;  */
+  /* background-color: #f9f9f9; */
+  color: #050103;
+}
+
+.product-recipe {
+  text-align: left;
+  padding: 15px;
+}

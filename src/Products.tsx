@@ -27,10 +27,10 @@ function Products() {
       <div className="product-list">
         {products.map((product) => (
           <div key={product.id} className="product-card">
+              <h2 className="product-name">{product.name}</h2>
               <p className="product-recipe">{product.recommendation}</p>
-              <p className="product-recipe">
-			  {...product.recipe.split("\n").map((line) => (<>{line}<br/></>))}
-			  </p>
+              <p className="product-recipe">{...product.recipe.split("\n").map((line) => (<>{line}<br/></>))}</p>
+              <p className="product-recipe">{...product.ingredients.split("\n").map((line) => (<>{line}<br/></>))}</p>
           </div>
         ))}
       </div>

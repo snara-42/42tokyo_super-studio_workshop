@@ -1,7 +1,17 @@
+import Swal from 'sweetalert2';
 import products from '../products.json';
 import './Products.css';
 
 function Products() {
+  const alert = () => {
+    Swal.fire({
+      position: "top-end",
+      icon: "success",
+      title: "カートに追加しました",
+      showConfirmButton: false,
+      timer: 1500
+    });
+  }
   return (
     <>
       <h1>商品一覧</h1>
@@ -14,7 +24,7 @@ function Products() {
               <p className="product-price">¥{product.price}</p>
               <p className="product-title">{product.title}</p>
               <p>
-                <button className="button-cart">
+                <button className="button-cart" onClick={alert}>
                   カートに入れる
                 </button>
               </p>

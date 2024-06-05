@@ -22,6 +22,18 @@ function Products() {
           </div>
         ))}
       </div>
+
+      <h1>レシピ一覧</h1>
+      <div className="product-list">
+        {products.map((product) => (
+          <div key={product.id} className="product-card">
+              <p className="product-recipe">{product.recommendation}</p>
+              <p className="product-recipe">
+			  {...product.recipe.split("\n").map((line) => (<>{line}<br/></>))}
+			  </p>
+          </div>
+        ))}
+      </div>
     </>
   );
 }

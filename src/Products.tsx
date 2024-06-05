@@ -22,9 +22,6 @@ function Products() {
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <a href="#mayo">
-              <img src={product.image_urls[0]} alt={product.name} className="product-image"/>
-            </a>
-            <a href="#mayo">
             <img
               src={product.image_urls[0]}
                alt={product.name}

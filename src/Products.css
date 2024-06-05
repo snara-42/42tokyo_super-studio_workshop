@@ -31,3 +31,94 @@
   font-weight: bold;
   color: green;
 }
+
+/* detail */
+.product-detail {
+  margin-top: 100px;
+}
+
+.product-detail-title {
+  margin: 1em 0 0.5em;
+  font-size: 2.4rem;
+}
+
+.product-detail-price {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.product-detail-lead {
+  margin: 3em 0 0;
+  font-size: 1.6rem;
+}
+
+.product-detail-image {
+  width: 100%;
+}
+
+.product-detail-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-detail-header {
+  width: 650px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.product-detail-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 2rem ;
+}
+
+.product-detail-information:nth-child(2n) {
+  flex-direction: row-reverse
+}
+
+.product-detail-information-image {
+  flex: 0 0 60%;
+}
+
+.product-detail-information-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-detail-information-text {
+  flex: 0 0 calc(40% - 20px);
+  text-align: left;
+  line-height: 2.4;
+}
+
+.product-detail-ingredients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 2rem ;
+}
+
+.product-detail-ingredients-image {
+  flex: 0 0 30%;
+}
+
+.product-detail-ingredients-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-detail-ingredients-text {
+  flex: 0 0 calc(70% - 40px);
+  text-align: left;
+}
+
+.product-detail-ingredients-text ul {
+  padding-left: 0;
+}
+
+.product-detail-ingredients-text li {
+  margin-bottom: 1em;
+  list-style: none;
+}

@@ -13,6 +13,11 @@ function Products() {
               <h2 className="product-name">{product.name}</h2>
               <p className="product-price">¥{product.price}</p>
               <p className="product-title">{product.title}</p>
+              <p>
+                <button className="button-cart">
+                  カートに入れる
+                </button>
+              </p>
             </div>
           </div>
         ))}

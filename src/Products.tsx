@@ -22,11 +22,9 @@ function Products() {
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <a href="#mayo">
-            <img
-              src={product.image_urls[0]}
-               alt={product.name}
-               className="product-image"
-             />
+              <img src={product.image_urls[0]} alt={product.name} className="product-image"/>
+            </a>
+            <a href="#mayo">
               <h2 className="product-name">{product.name}</h2>
               <p className="product-price">¥{product.price}</p>
               <p className="product-title">{product.title}</p>
